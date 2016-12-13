@@ -13,3 +13,5 @@ Desktop.ini
 .gitattribute
 bin
 release/demo
+
+.idea/

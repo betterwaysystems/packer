@@ -99,7 +99,7 @@ namespace samchon
 	 */
 	template <typename Key, typename T, 
 			  typename Hash = std::hash<Key>, typename Pred = std::equal_to<Key>, 
-			  typename Alloc = std::allocator<std::pair<const Key, T>>>
+			  typename Alloc = std::allocator<std::pair<const Key, T> > >
 	class HashMap
 		: public std::unordered_map<Key, T, Hash, Pred, Alloc>
 	{

@@ -1,5 +1,5 @@
 #pragma once
-#include <boxologic\Instance.hpp>
+#include <boxologic/Instance.hpp>
 
 namespace boxologic
 {
