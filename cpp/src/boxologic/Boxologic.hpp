@@ -756,8 +756,7 @@ namespace boxologic
 						}
 						else
 						{
-							// UPDATE MIN_Z
-							scrap_min_z->cumx -= cbox_layout_width;
+							
 
 							// CREATE A NEW NODE BETWEEN MIN_Z AND RIGHT
 							struct Scrappad scrap =
@@ -766,6 +765,9 @@ namespace boxologic
 								scrap_min_z->cumz + cbox_layout_length
 							};
 							scrap_list.insert(next, scrap);
+
+							// UPDATE MIN_Z
+							scrap_min_z->cumx -= cbox_layout_width;
 						}
 					}
 				}
