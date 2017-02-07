@@ -524,7 +524,7 @@ namespace boxologic
 
 					// STORE CAUCLATED RESULTS
 					remain_layout_height = layer_thickness - pre_layer;
-					packed_layout_height -= layer_thickness + pre_layer;
+					packed_layout_height = packed_layout_height - layer_thickness + pre_layer;
 					remain_layout_length = lilz;
 					layer_thickness = layer_in_layer;
 
@@ -756,8 +756,7 @@ namespace boxologic
 						}
 						else
 						{
-							// UPDATE MIN_Z
-							scrap_min_z->cumx -= cbox_layout_width;
+							
 
 							// CREATE A NEW NODE BETWEEN MIN_Z AND RIGHT
 							struct Scrappad scrap =
@@ -766,6 +765,9 @@ namespace boxologic
 								scrap_min_z->cumz + cbox_layout_length
 							};
 							scrap_list.insert(next, scrap);
+
+							// UPDATE MIN_Z
+							scrap_min_z->cumx -= cbox_layout_width;
 						}
 					}
 				}
