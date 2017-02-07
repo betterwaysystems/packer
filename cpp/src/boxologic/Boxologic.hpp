@@ -524,7 +524,7 @@ namespace boxologic
 
 					// STORE CAUCLATED RESULTS
 					remain_layout_height = layer_thickness - pre_layer;
-					packed_layout_height -= layer_thickness + pre_layer;
+					packed_layout_height = packed_layout_height - layer_thickness + pre_layer;
 					remain_layout_length = lilz;
 					layer_thickness = layer_in_layer;
 
